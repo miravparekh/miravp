@@ -1,5 +1,5 @@
 # Mirav Parekh's Portfolio Website
-https://miravp.github.io/miravp
+https://miravparekh.github.io/miravp
 
 Welcome to the GitHub repository for my personal portfolio website. This site serves as a dynamic showcase of my expertise and projects in data engineering, analytics, and machine learning. As a data engineer with experience across healthcare and technology sectors, I specialize in developing ETL processes, cloud-based data infrastructure, and large-scale data pipelines. As a dedicated Data Professional with a Master’s in Analytics from Northeastern University, with experience spanning data analysis, business intelligence, data engineering, and machine learning.
 
