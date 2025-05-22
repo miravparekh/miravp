@@ -191,15 +191,21 @@ function createSkillSlides() {
 const $tabQualification = document.querySelectorAll(".qualification-button")
 let $tabActive = document.querySelector(".qualification-button.-active")
 
-function selectQualification(item) {
-   item.preventDefault();
+function selectQualification(e) {
+   e.preventDefault();
    let $tabClicked = this;
+   
+   // Remove active class from current tab
    $tabActive.classList.remove("-active");
    $tabClicked.classList.add("-active");
    $tabActive = $tabClicked;
 
-   let $contentActive = document.querySelector(".qualification-content.-active");
-   $contentActive.classList.remove("-active");
+   // Hide all content sections
+   document.querySelectorAll(".qualification-content").forEach(content => {
+       content.classList.remove("-active");
+   });
+
+   // Show the selected content
    let idContent = $tabClicked.getAttribute("href");
    let $targetContent = document.querySelector(idContent);
    $targetContent.classList.add("-active");
